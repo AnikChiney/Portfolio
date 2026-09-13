@@ -545,31 +545,42 @@
     </div>
 </div>
 
-            <div class="project-card group relative rounded-xl overflow-hidden cursor-pointer" onclick="window.open('https://github.com/AnikChiney/CarbonLensAI-newPersonal', '_blank')">
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darker z-10"></div>
-                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CarbonLens AI" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">CarbonLens AI</h3>
-                        <div class="flex gap-3">
-                            <a href="https://github.com/AnikChiney/CarbonLensAI-newPersonal" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                            <a href="#" target="_blank" class="text-gray-400 hover:text-white transition-colors" onclick="event.stopPropagation();">
-                                <i class="fas fa-external-link-alt text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-4 line-clamp-2">Intelligent carbon emission forecasting system using Python, Flask, and Chart.js. Features Facebook Prophet time-series forecasting, carbon pricing analysis, and personalized sustainability recommendations.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Python</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Flask</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Chart.js</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Prophet</span>
-                    </div>
-                </div>
-            </div>
+           <div class="project-card group relative rounded-xl overflow-hidden cursor-pointer" onclick="window.open('https://github.com/AnikChiney/CarbonLensAI-newPersonal', '_blank')">
+    <!-- Gradient Overlay (pointer-events-none ensures card clicks work properly) -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-darker/40 to-darker z-10 pointer-events-none"></div>
 
+    <!-- Background Video Preview -->
+    <video 
+        src="carbonlensaidemo.mp4" 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+    </video>
+
+    <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
+        <div class="flex justify-between items-center mb-2">
+            <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">CarbonLens AI</h3>
+            <div class="flex gap-3">
+                <a href="https://github.com/AnikChiney/CarbonLensAI-newPersonal" target="_blank" class="text-gray-400 hover:text-white transition-colors" onclick="event.stopPropagation();">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <!-- Live Demo Link -->
+                <a href="YOUR_LIVE_DEMO_URL_HERE" target="_blank" class="text-gray-400 hover:text-white transition-colors" onclick="event.stopPropagation();">
+                    <i class="fas fa-external-link-alt text-xl"></i>
+                </a>
+            </div>
+        </div>
+        <p class="text-gray-400 text-sm mb-4 line-clamp-2">Intelligent carbon emission forecasting system using Python, Flask, and Chart.js. Features Facebook Prophet time-series forecasting, carbon pricing analysis, and personalized sustainability recommendations.</p>
+        <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Python</span>
+            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Flask</span>
+            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Chart.js</span>
+            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Prophet</span>
+        </div>
+    </div>
+</div>
             <div class="project-card group relative rounded-xl overflow-hidden cursor-pointer" onclick="window.open('https://github.com/AnikChiney/MindHeaven', '_blank')">
                 <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darker z-10"></div>
                 <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="MindHeaven" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
