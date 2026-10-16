@@ -206,6 +206,7 @@
                         <a href="#about" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
                         <a href="#experience" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
                         <a href="#projects" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#publications" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Publications</a>
                         <a href="#achievements" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Achievements</a>
                         <a href="#skills" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
                         <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105">Contact Me</a>
@@ -223,6 +224,7 @@
                 <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">About</a>
                 <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Experience</a>
                 <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Projects</a>
+                <a href="#publications" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Publications</a>
                 <a href="#achievements" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Achievements</a>
                 <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400">Contact</a>
             </div>
@@ -636,6 +638,110 @@
     </div>
 </section>
 
+    ```html
+<!-- Publications Section -->
+<section id="publications" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-14">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                <span class="text-indigo-500">04.</span>
+                Research Publications
+            </h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                Exploring AI, deep learning, and cross-lingual
+                speech emotion recognition through research.
+            </p>
+        </div>
+
+        <!-- Publication Card -->
+        <div class="max-w-4xl mx-auto glass-card rounded-2xl
+                    overflow-hidden border border-white/10">
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+
+                <!-- Paper Image -->
+                <div class="relative min-h-[280px] bg-slate-900
+                            flex items-center justify-center p-6">
+
+                    <img
+                        src="publication-ser.png"
+                        alt="Research paper thumbnail"
+                        class="w-full h-full max-h-96 object-contain
+                               rounded-lg shadow-xl"
+                        loading="lazy"
+                    >
+
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 text-xs font-semibold
+                                     rounded-full bg-indigo-600/90
+                                     text-white">
+                            IEEE Publication
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Paper Details -->
+                <div class="p-6 md:p-8 flex flex-col justify-center">
+
+                    <div class="flex items-center gap-2 mb-4
+                                text-indigo-400 text-sm">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Research Paper</span>
+                    </div>
+
+                    <h3 class="text-xl md:text-2xl font-bold
+                               text-white mb-4 leading-snug">
+                        Cross-Lingual Speech Emotion Recognition
+                        with Wav2Vec2: Bengali-English Emotion Transfer
+                    </h3>
+
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Research on cross-lingual speech emotion
+                        recognition using Wav2Vec2, exploring emotion
+                        transfer between Bengali and English speech.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-7">
+                        <span class="px-3 py-1 text-xs rounded-full
+                                     bg-indigo-500/10 text-indigo-300">
+                            Speech Emotion Recognition
+                        </span>
+                        <span class="px-3 py-1 text-xs rounded-full
+                                     bg-purple-500/10 text-purple-300">
+                            Wav2Vec2
+                        </span>
+                        <span class="px-3 py-1 text-xs rounded-full
+                                     bg-pink-500/10 text-pink-300">
+                            Deep Learning
+                        </span>
+                    </div>
+
+                    <a
+                        href="https://scholar.google.com/citations?user=EJZFb28AAAAJ"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center
+                               gap-2 px-5 py-3 rounded-lg
+                               bg-gradient-to-r from-indigo-600
+                               to-purple-600 text-white font-semibold
+                               hover:opacity-90 transition-all">
+
+                        <i class="fas fa-graduation-cap"></i>
+                        View on Google Scholar
+                        <i class="fas fa-arrow-up-right-from-square
+                                  text-xs"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+```
+
     <section id="achievements" class="py-24 bg-darker/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center"><span class="text-indigo-500">04.</span> Achievements</h2>
@@ -861,6 +967,13 @@
                 </a>
                 <a href="https://leetcode.com/u/Anik_Chiney/" target="_blank" class="text-gray-400 hover:text-white transition-colors" title="LeetCode">
                     <i class="fas fa-code text-xl"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=EJZFb28AAAAJ"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="text-gray-400 hover:text-white transition-colors"
+                   title="Google Scholar">
+                    <i class="fas fa-graduation-cap text-xl"></i>
                 </a>
                 <a href="mailto:anikchiney130@gmail.com" class="text-gray-400 hover:text-white transition-colors" title="Email">
                     <i class="fas fa-envelope text-xl"></i>
