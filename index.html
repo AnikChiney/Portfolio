@@ -8,43 +8,43 @@
     <meta name="keywords"
     content="Anik Chiney, Software Engineer, AI Researcher, Backend Developer, Machine Learning, Portfolio, MERN Stack, Speech Emotion Recognition">
     <meta name="description" content="Official portfolio of Anik Chiney, Software Engineer, AI Researcher, Backend Developer, and B.Tech CSE (AI & ML) student. Explore projects, research, experience, publications, and technical skills.">
-    <title>Anik Chiney | Software Engineer | AI Researcher | Backend Developer</title>
+    <title>Anik Chiney — Software Engineer & AI Researcher</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="canonical" href="https://anikchiney130.github.io/Portfolio/">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Outfit', 'sans-serif'],
-                        mono: ['Space Grotesk', 'monospace'],
+                        display: ['"SF Pro Display"', '-apple-system', 'BlinkMacSystemFont', 'Inter', 'sans-serif'],
+                        sans: ['"SF Pro Text"', '-apple-system', 'BlinkMacSystemFont', 'Inter', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#6366f1',
-                        secondary: '#ec4899',
-                        dark: '#0f172a',
-                        darker: '#020617',
-                    },
-                    animation: {
-                        'blob': 'blob 7s infinite',
-                    },
-                    keyframes: {
-                        blob: {
-                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
-                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        apple: {
+                            blue: '#0066cc',
+                            blueFocus: '#0071e3',
+                            blueDark: '#2997ff',
+                            ink: '#1d1d1f',
+                            muted80: '#333333',
+                            muted48: '#7a7a7a',
+                            bodyMuted: '#cccccc',
+                            canvas: '#ffffff',
+                            parchment: '#f5f5f7',
+                            pearl: '#fafafc',
+                            tile1: '#272729',
+                            tile2: '#2a2a2c',
+                            tile3: '#252527',
+                            black: '#000000',
+                            hairline: '#e0e0e0',
+                            dividerSoft: '#f0f0f0',
                         }
                     }
                 }
@@ -53,1079 +53,992 @@
     </script>
 
     <style>
+        :root {
+            --action-blue: #0066cc;
+            --focus-blue: #0071e3;
+            --sky-blue: #2997ff;
+            --ink: #1d1d1f;
+            --parchment: #f5f5f7;
+            --tile-dark: #272729;
+        }
+
         html {
             scroll-behavior: smooth;
+            font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         body {
-            background-color: #020617;
-            color: #e2e8f0;
+            background-color: #ffffff;
+            color: #1d1d1f;
             overflow-x: hidden;
+            font-size: 17px;
+            line-height: 1.47;
+            letter-spacing: -0.374px;
         }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0f172a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #6366f1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #4f46e5;
+        /* Apple Display Typography */
+        .apple-hero-display {
+            font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 1.07;
+            letter-spacing: -0.28px;
         }
 
-        /* Glassmorphism Utilities */
-        .glass {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+        @media (max-width: 1068px) {
+            .apple-hero-display { font-size: 40px; }
+        }
+        @media (max-width: 640px) {
+            .apple-hero-display { font-size: 34px; }
+        }
+        @media (max-width: 419px) {
+            .apple-hero-display { font-size: 28px; }
         }
 
-        .glass-card {
-            background: rgba(30, 41, 59, 0.4);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.4s ease;
+        .apple-display-lg {
+            font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
         }
 
-        .glass-card:hover {
-            border-color: rgba(99, 102, 241, 0.5);
-            box-shadow: 0 0 30px rgba(99, 102, 241, 0.15);
-            transform: translateY(-5px);
+        @media (max-width: 640px) {
+            .apple-display-lg { font-size: 32px; }
         }
 
-        /* Text Gradient */
-        .text-gradient {
-            background: linear-gradient(to right, #818cf8, #c084fc, #f472b6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .apple-display-md {
+            font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 1.25;
+            letter-spacing: -0.374px;
         }
 
-        /* Cursor Effect */
-        .cursor-dot,
-        .cursor-outline {
-            position: fixed;
-            top: 0;
-            left: 0;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            z-index: 9999;
-            pointer-events: none;
-        }
-        .cursor-dot {
-            width: 8px;
-            height: 8px;
-            background-color: white;
-        }
-        .cursor-outline {
-            width: 40px;
-            height: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            transition: width 0.2s, height 0.2s, background-color 0.2s;
+        .apple-lead {
+            font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 1.14;
+            letter-spacing: 0.196px;
         }
 
-        /* Loader */
-        #loader {
-            position: fixed;
-            inset: 0;
-            background: #020617;
-            z-index: 10000;
-            display: flex;
-            justify-content: center;
+        @media (max-width: 640px) {
+            .apple-lead { font-size: 21px; }
+        }
+
+        .apple-lead-airy {
+            font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing: 0;
+        }
+
+        .apple-tagline {
+            font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1.19;
+            letter-spacing: 0.231px;
+        }
+
+        .apple-caption {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.43;
+            letter-spacing: -0.224px;
+        }
+
+        .apple-caption-strong {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.29;
+            letter-spacing: -0.224px;
+        }
+
+        .apple-fine-print {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.3;
+            letter-spacing: -0.12px;
+        }
+
+        /* Apple Buttons */
+        .btn-apple-primary {
+            display: inline-flex;
             align-items: center;
-            transition: opacity 0.5s ease;
-        }
-        .loader-text {
-            font-family: 'Space Grotesk', monospace;
-            font-size: 2rem;
-            color: #6366f1;
-            animation: pulse 1.5s infinite;
+            justify-content: center;
+            gap: 8px;
+            background-color: #0066cc;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: -0.374px;
+            padding: 11px 22px;
+            border-radius: 9999px;
+            transition: transform 0.18s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.2s ease;
+            cursor: pointer;
         }
 
-        /* Achievement Card */
-        .achievement-card {
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
-            border-left: 3px solid #6366f1;
+        .btn-apple-primary:hover {
+            background-color: #0071e3;
         }
 
-        /* Section offset for fixed navbar */
+        .btn-apple-primary:active {
+            transform: scale(0.95);
+        }
+
+        .btn-apple-primary:focus-visible {
+            outline: 2px solid #0071e3;
+            outline-offset: 2px;
+        }
+
+        .btn-apple-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: transparent;
+            color: #0066cc;
+            border: 1px solid #0066cc;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: -0.374px;
+            padding: 11px 22px;
+            border-radius: 9999px;
+            transition: transform 0.18s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.2s ease, color 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn-apple-secondary:hover {
+            background-color: #0066cc;
+            color: #ffffff;
+        }
+
+        .btn-apple-secondary:active {
+            transform: scale(0.95);
+        }
+
+        .btn-apple-secondary-dark {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: transparent;
+            color: #2997ff;
+            border: 1px solid #2997ff;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: -0.374px;
+            padding: 11px 22px;
+            border-radius: 9999px;
+            transition: transform 0.18s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.2s ease, color 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn-apple-secondary-dark:hover {
+            background-color: #2997ff;
+            color: #000000;
+        }
+
+        .btn-apple-secondary-dark:active {
+            transform: scale(0.95);
+        }
+
+        /* Signature Apple Product Shadow (ONLY for product renders / featured media resting on a surface) */
+        .apple-product-shadow {
+            box-shadow: 3px 5px 30px 0 rgba(0, 0, 0, 0.22);
+        }
+
+        /* Frosted Sub-Nav */
+        .apple-sub-nav {
+            background-color: rgba(245, 245, 247, 0.82);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        /* Store Utility Card */
+        .apple-utility-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 18px;
+            padding: 24px;
+            transition: border-color 0.25s ease;
+        }
+
+        .apple-utility-card:hover {
+            border-color: #0066cc;
+        }
+
+        /* Configurator Option Chip */
+        .apple-chip {
+            display: inline-flex;
+            align-items: center;
+            background-color: #ffffff;
+            color: #1d1d1f;
+            border: 1px solid #e0e0e0;
+            border-radius: 9999px;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.29;
+            letter-spacing: -0.224px;
+        }
+
+        /* Text Links */
+        .apple-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .apple-link:hover {
+            text-decoration: underline;
+        }
+
+        .apple-link-dark {
+            color: #2997ff;
+            text-decoration: none;
+        }
+        .apple-link-dark:hover {
+            text-decoration: underline;
+        }
+
+        /* Section anchor offset */
         section {
-            scroll-margin-top: 80px;
-        }
-
-        /* Link hover effect */
-        .link-hover {
-            position: relative;
-            transition: color 0.3s ease;
-        }
-        .link-hover::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background: linear-gradient(to right, #6366f1, #ec4899);
-            transition: width 0.3s ease;
-        }
-        .link-hover:hover::after {
-            width: 100%;
+            scroll-margin-top: 96px;
         }
     </style>
-<base target="_blank">
+    <base target="_blank">
 </head>
-<body class="antialiased selection:bg-indigo-500 selection:text-white">
+<body>
 
-    <div id="loader">
-        <div class="loader-text">&lt;Anik Chiney /&gt;</div>
-    </div>
+    <!-- Global Nav (44px, pure black #000000) -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-apple-black text-white h-[44px]">
+        <div class="max-w-[980px] mx-auto px-4 h-full flex items-center justify-between text-[12px] tracking-[-0.12px]">
+            <a href="#home" target="_self" class="text-white/90 hover:text-white transition-opacity font-semibold tracking-normal">
+                AC
+            </a>
 
-    <div class="cursor-dot hidden md:block"></div>
-    <div class="cursor-outline hidden md:block"></div>
+            <div class="hidden md:flex items-center space-x-7 text-white/80">
+                <a href="#about" target="_self" class="hover:text-white transition-colors">About</a>
+                <a href="#experience" target="_self" class="hover:text-white transition-colors">Experience</a>
+                <a href="#projects" target="_self" class="hover:text-white transition-colors">Projects</a>
+                <a href="#publications" target="_self" class="hover:text-white transition-colors">Publications</a>
+                <a href="#achievements" target="_self" class="hover:text-white transition-colors">Achievements</a>
+                <a href="#skills" target="_self" class="hover:text-white transition-colors">Skills</a>
+                <a href="#contact" target="_self" class="hover:text-white transition-colors">Contact</a>
+            </div>
 
-    <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
-        <div class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div class="absolute top-0 right-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
-        <canvas id="particleCanvas" class="absolute inset-0 w-full h-full opacity-30"></canvas>
-    </div>
-
-    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-                    <span class="text-2xl font-bold font-mono text-white">&lt;<span class="text-indigo-400">AC</span>/&gt;</span>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#about" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="#experience" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Experience</a>
-                        <a href="#projects" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                        <a href="#publications" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Publications</a>
-                        <a href="#achievements" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Achievements</a>
-                        <a href="#skills" class="hover:text-indigo-400 transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
-                        <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105">Contact Me</a>
-                    </div>
-                </div>
-                <div class="-mr-2 flex md:hidden">
-                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
+            <div class="flex items-center space-x-5 text-white/80">
+                <a href="https://github.com/AnikChiney" target="_blank" class="hover:text-white transition-colors" title="GitHub">
+                    <i class="fab fa-github text-[14px]"></i>
+                </a>
+                <a href="https://linkedin.com/in/anik-chiney-a11842325" target="_blank" class="hover:text-white transition-colors" title="LinkedIn">
+                    <i class="fab fa-linkedin text-[14px]"></i>
+                </a>
+                <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-white/90 hover:text-white focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fas fa-bars text-[14px]"></i>
+                </button>
             </div>
         </div>
-        <div class="hidden md:hidden glass" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">About</a>
-                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Experience</a>
-                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Projects</a>
-                <a href="#publications" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Publications</a>
-                <a href="#achievements" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Achievements</a>
-                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-400">Contact</a>
-            </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-apple-black border-t border-white/10 px-6 py-4 space-y-3 text-[14px]">
+            <a href="#about" target="_self" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-white/80 hover:text-white">About</a>
+            <a href="#experience" target="_self" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-white/80 hover:text-white">Experience</a>
+            <a href="#projects" target="_self" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-white/80 hover:text-white">Projects</a>
+            <a href="#publications" target="_self" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-white/80 hover:text-white">Publications</a>
+            <a href="#achievements" target="_self" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-white/80 hover:text-white">Achievements</a>
+            <a href="#skills" target="_self" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-white/80 hover:text-white">Skills</a>
+            <a href="#contact" target="_self" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-apple-blueDark">Contact</a>
         </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex items-center justify-center relative pt-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 text-center md:text-left z-10">
-                <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-indigo-400 uppercase bg-indigo-900/30 rounded-full border border-indigo-500/30 animate-fade-in-up">
-                    Available for Opportunities
-                </div>
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                    Hi, I'm <span class="text-gradient">Anik Chiney</span>
-                </h1>
-                <h2 class="text-2xl md:text-3xl text-gray-300 mb-8 font-mono h-10">
-                    I build <span id="typewriter" class="text-indigo-400"></span><span class="animate-pulse">|</span>
-                </h2>
-                <p class="text-gray-400 text-lg mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed">
-                    Software Engineer & AI/ML Enthusiast specializing in scalable backend systems, REST APIs, and full-stack applications. Solved <span class="text-indigo-400 font-semibold">200+</span> LeetCode problems.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#projects" class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full font-bold text-white shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all transform hover:-translate-y-1">
-                        View Projects
-                    </a>
-                    <a href="https://github.com/AnikChiney" target="_blank" class="px-8 py-4 glass rounded-full font-bold text-white hover:bg-white/10 transition-all flex items-center justify-center gap-2">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-
-                <div class="mt-12 flex gap-6 justify-center md:justify-start text-gray-400">
-                    <a href="https://linkedin.com/in/anik-chiney-a11842325" target="_blank" class="hover:text-white transition-colors text-2xl" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/AnikChiney" target="_blank" class="hover:text-white transition-colors text-2xl" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://leetcode.com/u/Anik_Chiney/" target="_blank" class="hover:text-white transition-colors text-2xl" title="LeetCode">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="mailto:anikchiney130@gmail.com" class="hover:text-white transition-colors text-2xl" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="tel:+919382844421" class="hover:text-white transition-colors text-2xl" title="Phone: +91 9382844421">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="https://scholar.google.com/citations?hl=en&user=EJZFb28AAAAJ"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="hover:text-white transition-colors text-2xl"
-                       title="Google Scholar">
-                        <i class="fas fa-graduation-cap"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="md:w-1/2 mt-12 md:mt-0 relative flex justify-center">
-                <div class="relative w-80 h-80 md:w-96 md:h-96">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500 to-pink-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
-                    <div class="relative w-full h-full glass rounded-2xl overflow-hidden border border-white/10 shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500 group">
-                        
-                        <img src="myimg3.png" alt="Anik Chiney" class="w-full h-full object-cover object-center opacity-85 group-hover:scale-105 transition-transform duration-700">
-                        
-                        <div class="absolute inset-0 bg-gradient-to-t from-darker via-transparent to-transparent opacity-90"></div>
-                        <div class="absolute bottom-6 left-6 z-20">
-                            <div class="text-xs text-indigo-300 font-mono mb-1">Anik Chiney</div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <a href="#about" class="text-gray-500 hover:text-white transition-colors">
-                <i class="fas fa-chevron-down text-2xl"></i>
+    <!-- Frosted Sub-Nav (52px, sticky under Global Nav) -->
+    <div class="sticky top-[44px] z-40 apple-sub-nav h-[52px]">
+        <div class="max-w-[980px] mx-auto px-4 h-full flex items-center justify-between">
+            <a href="#home" target="_self" class="apple-tagline text-apple-ink">
+                Anik Chiney
             </a>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div class="gsap-fade-right">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6"><span class="text-indigo-500">01.</span> About Me</h2>
-                    <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
-                        <p>
-                            Hello! I'm Anik, a passionate technologist from Kolkata. My journey in tech started with a fascination for how things work, which quickly evolved into building things that work intelligently.
-                        </p>
-                        <p>
-                            Currently pursuing my <span class="text-indigo-400 font-semibold">B.Tech in CSE (AI & ML)</span> at 
-                            <a href="https://iem.edu.in/" target="_blank" class="text-indigo-400 hover:text-white link-hover">IEM, Kolkata</a> 
-                            (CGPA: <span class="text-indigo-400 font-semibold">9.37/10</span>), I specialize in bridging the gap between complex AI models and user-friendly web applications.
-                        </p>
-                        <p>
-                            With strong foundations in <span class="text-indigo-400">Data Structures, Algorithms, and OOP</span>, I love solving real-world problems with code. I've solved 
-                            <a href="https://leetcode.com/u/Anik_Chiney/" target="_blank" class="text-indigo-400 hover:text-white link-hover">200+ algorithmic problems on LeetCode</a> 
-                            with focus on efficient problem solving.
-                        </p>
-                    </div>
-
-                    <div class="mt-8 grid grid-cols-2 gap-4">
-                        <div class="glass p-4 rounded-lg text-center">
-                            <div class="text-3xl font-bold text-white mb-1">9.37</div>
-                            <div class="text-sm text-gray-400">Current CGPA</div>
-                        </div>
-                        <div class="glass p-4 rounded-lg text-center">
-                            <div class="text-3xl font-bold text-white mb-1">200+</div>
-                            <div class="text-sm text-gray-400">LeetCode Problems</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative gsap-fade-left">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-xl opacity-30 blur-lg"></div>
-                    <div class="relative glass p-8 rounded-xl border border-white/10">
-                        <h3 class="text-xl font-bold mb-6 text-white border-b border-white/10 pb-2">Education & Certs</h3>
-
-                        <div class="space-y-6">
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-900/50 flex items-center justify-center text-indigo-400">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-white">B.Tech in CSE (AI & ML)</h4>
-                                    <p class="text-sm text-gray-400">
-                                        <a href="https://iem.edu.in/" target="_blank" class="hover:text-indigo-400 transition-colors">Institute of Engineering and Management, Kolkata</a>
-                                    </p>
-                                    <p class="text-xs text-indigo-400 mt-1">2024 - 2028 • CGPA: 9.37/10</p>
-                                </div>
-                            </div>
-
-                            <div class="border-t border-white/10 pt-6">
-                                <h4 class="font-bold text-white mb-3">Certifications</h4>
-                                <ul class="space-y-2 text-sm text-gray-300">
-                                    <li class="flex items-center gap-2">
-                                        <i class="fas fa-check-circle text-green-400 text-xs"></i> 
-                                        <a href="https://www.credly.com/org/ibm/badge/fundamentals-of-ai-agents-using-rag-and-langchain" target="_blank" class="hover:text-indigo-400 transition-colors link-hover">Fundamentals of AI Agents Using RAG (IBM)</a>
-                                    </li>
-                                    <li class="flex items-center gap-2">
-                                        <i class="fas fa-check-circle text-green-400 text-xs"></i> 
-                                        <a href="https://nptel.ac.in/" target="_blank" class="hover:text-indigo-400 transition-colors link-hover">Programming with Generative AI (NPTEL)</a>
-                                    </li>
-                                    <li class="flex items-center gap-2">
-                                        <i class="fas fa-check-circle text-green-400 text-xs"></i> 
-                                        <a href="https://www.deeplearning.ai/courses/generative-ai-for-everyone/" target="_blank" class="hover:text-indigo-400 transition-colors link-hover">Generative AI for Everyone (DeepLearning.AI)</a>
-                                    </li>
-                                    <li class="flex items-center gap-2">
-                                        <i class="fas fa-check-circle text-green-400 text-xs"></i> 
-                                        <a href="https://www.coursera.org/learn/uol-cyber-security-fundamentals" target="_blank" class="hover:text-indigo-400 transition-colors link-hover">Cyber Security Fundamentals (University of London)</a>
-                                    </li>
-                                    <li class="flex items-center gap-2">
-                                        <i class="fas fa-check-circle text-green-400 text-xs"></i> 
-                                        <a href="https://nptel.ac.in/" target="_blank" class="hover:text-indigo-400 transition-colors link-hover">Soft Skill Development (NPTEL)</a>
-                                    </li>
-                                </ul>
-                                <div class="mt-4">
-                                    <a href="https://drive.google.com/drive/folders/1B25NzjUtOmtdBTuMp7o0CpIM0c4uj-jK" target="_blank" class="inline-flex items-center gap-2 text-indigo-400 hover:text-white text-sm font-medium transition-colors link-hover">
-                                        <i class="fas fa-external-link-alt"></i> View Certificate Portfolio
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="py-24 bg-darker/50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center"><span class="text-indigo-500">02.</span> Experience</h2>
-
-        <div class="relative">
-            <!-- Timeline Center Line -->
-            <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-indigo-500 via-purple-500 to-indigo-500"></div>
-
-            <!-- Item 1: Research Intern (May 2026 - Present) -->
-            <div class="relative z-10 mb-12 md:mb-16">
-                <div class="md:flex items-center justify-between w-full">
-                    <div class="md:w-5/12 mb-4 md:mb-0 md:text-right pr-8 gsap-fade-right">
-                        <span class="text-indigo-400 font-mono text-sm">May 2026 - August 2026</span>
-                        <h3 class="text-xl font-bold text-white">Summer Intern</h3>
-                        <p class="text-gray-400">
-                            <a href="https://iem.edu.in/" target="_blank" class="hover:text-indigo-400 transition-colors link-hover">CEDS, IEM</a>
-                            <a href="https://drive.google.com/file/d/1N0CDfG0fAxGNjAVG82-yw_739lneL-4A/view?usp=sharing" target="_blank" class="ml-2 text-xs text-indigo-400 hover:text-white transition-colors">
-                                <i class="fas fa-certificate"></i> Certificate
-                            </a>
-                        </p>
-                    </div>
-                    <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-darker"></div>
-                    <div class="md:w-5/12 pl-8 md:pl-8 gsap-fade-left">
-                        <div class="glass-card p-6 rounded-xl">
-                            <ul class="list-disc list-inside text-gray-300 text-sm space-y-2">
-                                <li>Developed <strong>EmotionFusion</strong>, an AI-powered Music Emotion Recognition (MER) framework for cross-cultural emotion analysis.</li>
-                                <li>Designed and evaluated <strong>CNN-BiLSTM-Attention</strong> and <strong>SVM</strong>-based pipelines on the DEAM and Indian Classical Music datasets, achieving up to <strong>77.06% accuracy</strong>.</li>
-                                <li>Implemented end-to-end audio preprocessing, feature extraction using <strong>MFCC, Chroma, and Spectral Features</strong>, model training, and evaluation using <strong>PyTorch, Scikit-learn, and Librosa</strong>.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item 2: AI Intern (Jan 2026 - Present) -->
-            <div class="relative z-10 mb-12 md:mb-16">
-                <div class="md:flex items-center justify-between w-full flex-row-reverse">
-                    <div class="md:w-5/12 mb-4 md:mb-0 md:text-left pl-8 gsap-fade-left">
-                        <span class="text-purple-400 font-mono text-sm">Jan 2026 - April 2026</span>
-                        <h3 class="text-xl font-bold text-white">Winter Intern</h3>
-                        <p class="text-gray-400">
-                            <a href="https://c2iotlab.iem.edu.in/" target="_blank" class="hover:text-indigo-400 transition-colors link-hover">C2IoT Lab, IEM</a>
-                        </p>
-                    </div>
-                    <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-darker"></div>
-                    <div class="md:w-5/12 pr-8 md:pr-8 text-right gsap-fade-right">
-                        <div class="glass-card p-6 rounded-xl inline-block text-left">
-                            <ul class="list-disc list-inside text-gray-300 text-sm space-y-2">
-                                <li>Developing <strong>Small Language Models (SLMs)</strong> for AI-driven mental health support on edge devices (Jetson Nano, ESP32).</li>
-                                <li>Built backend inference pipelines, reducing system latency by <strong>~30%</strong>.</li>
-                                <li>Optimizing deployment workflows for AI models in resource-constrained environments.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item 3: Business Development Intern (Mar 2025) -->
-            <div class="relative z-10">
-                <div class="md:flex items-center justify-between w-full">
-                    <div class="md:w-5/12 mb-4 md:mb-0 md:text-right pr-8 gsap-fade-right">
-                        <span class="text-indigo-400 font-mono text-sm">Mar 2025</span>
-                        <h3 class="text-xl font-bold text-white">Business Development Intern</h3>
-                        <p class="text-gray-400">
-                            <a href="https://younity.in/" target="_blank" class="hover:text-indigo-400 transition-colors link-hover">Younity (Remote)</a>
-                            <a href="https://drive.google.com/file/d/1x29WeJvsI6__uk2_lGw8u4NF40qIRjf0/view" target="_blank" class="ml-2 text-xs text-indigo-400 hover:text-white transition-colors">
-                                <i class="fas fa-certificate"></i> Certificate
-                            </a>
-                        </p>
-                    </div>
-                    <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-darker"></div>
-                    <div class="md:w-5/12 pl-8 md:pl-8 gsap-fade-left">
-                        <div class="glass-card p-6 rounded-xl">
-                            <ul class="list-disc list-inside text-gray-300 text-sm space-y-2">
-                                <li>Conducted market analysis across <strong>100+ potential clients</strong> to identify partnership opportunities.</li>
-                                <li>Executed CRM outreach campaigns contributing to a <strong>20% increase</strong> in client conversion.</li>
-                                <li>Analyzed outreach data to improve targeting strategies and campaign efficiency.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-    <section id="projects" class="py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-end mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold"><span class="text-indigo-500">03.</span> Featured Projects</h2>
-            <a href="https://github.com/AnikChiney" target="_blank" class="hidden md:block text-indigo-400 hover:text-white transition-colors font-mono text-sm link-hover">
-                View All on GitHub <i class="fas fa-arrow-right ml-1"></i>
-            </a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            <div class="project-card group relative rounded-xl overflow-hidden cursor-pointer" onclick="window.open('https://github.com/AnikChiney', '_blank')">
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-darker/40 to-darker z-10 pointer-events-none"></div>
-                <video 
-                    src="EmotionFusion.mp4" 
-                    autoplay 
-                    loop 
-                    muted 
-                    playsinline 
-                    class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                </video>
-                <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">EmotionFusion</h3>
-                        <div class="flex gap-3">
-                            <a href="https://github.com/AnikChiney" target="_blank" class="text-gray-400 hover:text-white transition-colors" onclick="event.stopPropagation();">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-4 line-clamp-2">AI-powered Music Emotion Recognition (MER) framework for cross-cultural emotion analysis. Achieved 77.06% accuracy using CNN-BiLSTM-Attention on DEAM and Indian Classical datasets.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">PyTorch</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Librosa</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">CNN-BiLSTM</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Audio ML</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card group relative rounded-xl overflow-hidden cursor-pointer" onclick="window.open('https://github.com/AnikChiney', '_blank')">
-    <!-- Gradient Overlay (pointer-events-none lets clicks pass through) -->
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-darker/40 to-darker z-10 pointer-events-none"></div>
-    
-    <!-- Background Video Preview -->
-    <video 
-        src="serdemovideo.mp4" 
-        autoplay 
-        loop 
-        muted 
-        playsinline 
-        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
-    </video>
-
-    <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
-        <div class="flex justify-between items-center mb-2">
-            <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Speech Emotion Recognition</h3>
-            <div class="flex gap-3">
-                <a href="https://github.com/AnikChiney" target="_blank" class="text-gray-400 hover:text-white transition-colors" onclick="event.stopPropagation();">
-                    <i class="fab fa-github text-xl"></i>
+            <div class="flex items-center space-x-6">
+                <a href="https://leetcode.com/u/Anik_Chiney/" target="_blank" class="hidden sm:inline apple-caption text-apple-muted80 hover:text-apple-blue transition-colors">LeetCode</a>
+                <a href="https://scholar.google.com/citations?hl=en&user=EJZFb28AAAAJ" target="_blank" rel="noopener noreferrer" class="hidden sm:inline apple-caption text-apple-muted80 hover:text-apple-blue transition-colors">Google Scholar</a>
+                <a href="#contact" target="_self" class="bg-apple-blue hover:bg-apple-blueFocus text-white text-[12px] leading-none tracking-[-0.12px] px-[14px] py-[7px] rounded-full transition-transform active:scale-95">
+                    Contact
                 </a>
             </div>
         </div>
-        <p class="text-gray-400 text-sm mb-4 line-clamp-2">Deep learning system using LSTM and Bidirectional LSTM with MFCC features. Trained on RAVDESS and Hindi IESC datasets with wav2vec2 embeddings for multilingual emotion recognition.</p>
-        <div class="flex flex-wrap gap-2">
-            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Python</span>
-            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">LSTM</span>
-            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Deep Learning</span>
-            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">wav2vec2</span>
-        </div>
     </div>
-</div>
 
-           <div class="project-card group relative rounded-xl overflow-hidden cursor-pointer" onclick="window.open('https://github.com/AnikChiney/CarbonLensAI-newPersonal', '_blank')">
-    <!-- Gradient Overlay (pointer-events-none ensures card clicks work properly) -->
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-darker/40 to-darker z-10 pointer-events-none"></div>
-
-    <!-- Background Video Preview -->
-    <video 
-        src="carbonlensaidemo.mp4" 
-        autoplay 
-        loop 
-        muted 
-        playsinline 
-        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
-    </video>
-
-    <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
-        <div class="flex justify-between items-center mb-2">
-            <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">CarbonLens AI</h3>
-            <div class="flex gap-3">
-                <a href="https://github.com/AnikChiney/CarbonLensAI-newPersonal" target="_blank" class="text-gray-400 hover:text-white transition-colors" onclick="event.stopPropagation();">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-                <!-- Live Demo Link -->
-                <a href="YOUR_LIVE_DEMO_URL_HERE" target="_blank" class="text-gray-400 hover:text-white transition-colors" onclick="event.stopPropagation();">
-                    <i class="fas fa-external-link-alt text-xl"></i>
-                </a>
-            </div>
-        </div>
-        <p class="text-gray-400 text-sm mb-4 line-clamp-2">Intelligent carbon emission forecasting system using Python, Flask, and Chart.js. Features Facebook Prophet time-series forecasting, carbon pricing analysis, and personalized sustainability recommendations.</p>
-        <div class="flex flex-wrap gap-2">
-            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Python</span>
-            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Flask</span>
-            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Chart.js</span>
-            <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Prophet</span>
-        </div>
-    </div>
-</div>
-            <div class="project-card group relative rounded-xl overflow-hidden cursor-pointer" onclick="window.open('https://github.com/AnikChiney/MindHeaven', '_blank')">
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darker z-10"></div>
-                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="MindHeaven" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">MindHeaven</h3>
-                        <div class="flex gap-3">
-                            <a href="https://github.com/AnikChiney/MindHeaven" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-4 line-clamp-2">AI Mental Health Platform built with MERN stack. Features AI chatbot using OpenRouter APIs, JWT-based authentication, and secure RESTful APIs with scalable backend services.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">MERN</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">OpenRouter API</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">JWT Auth</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">REST API</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card group relative rounded-xl overflow-hidden cursor-pointer" onclick="window.open('https://github.com/AnikChiney/Anikwonderlust', '_blank')">
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-darker z-10"></div>
-                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="WonderLust" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
-                <div class="absolute bottom-0 left-0 p-6 z-20 w-full">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">WonderLust</h3>
-                        <div class="flex gap-3">
-                            <a href="https://github.com/AnikChiney/Anikwonderlust" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-4 line-clamp-2">Full Stack Property Rental Platform with booking management, authentication, CRUD operations, and optimized MongoDB queries for efficient data retrieval.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">MERN</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">Bootstrap</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">MongoDB</span>
-                        <span class="px-2 py-1 text-xs rounded bg-white/10 text-indigo-300">REST API</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-    
-<!-- Publications Section -->
-<section id="publications" class="py-24 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <!-- Section Heading -->
-        <div class="text-center mb-14">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                <span class="text-indigo-500">04.</span>
-                Research Publications
-            </h2>
-            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                Exploring AI, deep learning, and cross-lingual
-                speech emotion recognition through research.
+    <!-- HERO TILE (Light Canvas #ffffff) -->
+    <section id="home" class="bg-apple-canvas text-apple-ink py-[80px] px-4">
+        <div class="max-w-[980px] mx-auto text-center">
+            <p class="apple-caption-strong text-apple-blue mb-3">
+                Available for Opportunities
             </p>
+            <h1 class="apple-hero-display text-apple-ink mb-4">
+                Anik Chiney
+            </h1>
+            <p class="apple-lead text-apple-ink mb-4">
+                Software Engineer & AI Researcher.
+            </p>
+            <p class="max-w-[680px] mx-auto text-apple-muted80 mb-8">
+                Building <span id="typewriter" class="font-semibold text-apple-ink">AI Applications.</span> Specializing in scalable backend systems, REST APIs, and full-stack applications with <span class="font-semibold text-apple-ink">200+</span> LeetCode problems solved.
+            </p>
+
+            <!-- Dual Apple Pill CTAs -->
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-10">
+                <a href="#projects" target="_self" class="btn-apple-primary">
+                    View Projects
+                </a>
+                <a href="https://github.com/AnikChiney" target="_blank" class="btn-apple-secondary">
+                    GitHub
+                </a>
+            </div>
+
+            <!-- Quiet Utility Links Row -->
+            <div class="flex flex-wrap items-center justify-center gap-6 apple-caption mb-14">
+                <a href="https://linkedin.com/in/anik-chiney-a11842325" target="_blank" class="apple-link">LinkedIn <i class="fas fa-chevron-right text-[10px] ml-0.5"></i></a>
+                <a href="https://leetcode.com/u/Anik_Chiney/" target="_blank" class="apple-link">LeetCode <i class="fas fa-chevron-right text-[10px] ml-0.5"></i></a>
+                <a href="https://scholar.google.com/citations?hl=en&user=EJZFb28AAAAJ" target="_blank" rel="noopener noreferrer" class="apple-link">Google Scholar <i class="fas fa-chevron-right text-[10px] ml-0.5"></i></a>
+                <a href="mailto:anikchiney130@gmail.com" class="apple-link">Email <i class="fas fa-chevron-right text-[10px] ml-0.5"></i></a>
+                <a href="tel:+919382844421" class="apple-link">+91 9382844421 <i class="fas fa-chevron-right text-[10px] ml-0.5"></i></a>
+            </div>
+
+            <!-- Portrait Image Resting on Surface with Single System Product Shadow -->
+            <div class="max-w-[360px] mx-auto">
+                <img src="myimg3.png" alt="Anik Chiney" class="w-full aspect-square object-cover object-center rounded-[18px] bg-apple-parchment apple-product-shadow">
+            </div>
         </div>
+    </section>
 
-        <!-- Publication Card -->
-        <div class="max-w-4xl mx-auto glass-card rounded-2xl
-                    overflow-hidden border border-white/10">
+    <!-- 01. ABOUT ME (Parchment Canvas #f5f5f7) -->
+    <section id="about" class="bg-apple-parchment text-apple-ink py-[80px] px-4">
+        <div class="max-w-[980px] mx-auto">
+            <div class="text-center max-w-[760px] mx-auto mb-14">
+                <p class="apple-caption-strong text-apple-muted48 uppercase tracking-wider mb-2">01. About Me</p>
+                <h2 class="apple-display-lg text-apple-ink mb-6">
+                    Bridging intelligent models and user-friendly web applications.
+                </h2>
+                <p class="apple-lead-airy text-apple-muted80">
+                    A passionate technologist from Kolkata pursuing a <strong class="font-semibold text-apple-ink">B.Tech in CSE (AI & ML)</strong> at
+                    <a href="https://iem.edu.in/" target="_blank" class="apple-link">IEM, Kolkata</a>
+                    with a <strong class="font-semibold text-apple-ink">9.37/10</strong> CGPA.
+                </p>
+            </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- Key Metrics Strip -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[640px] mx-auto mb-14">
+                <div class="apple-utility-card text-center">
+                    <div class="apple-display-lg text-apple-ink mb-1">9.37</div>
+                    <div class="apple-caption text-apple-muted48">Current CGPA (out of 10)</div>
+                </div>
+                <div class="apple-utility-card text-center">
+                    <div class="apple-display-lg text-apple-ink mb-1">200+</div>
+                    <div class="apple-caption text-apple-muted48">Algorithmic Problems on LeetCode</div>
+                </div>
+            </div>
 
-                <!-- Paper Image -->
-                <div class="relative min-h-[280px] bg-slate-900
-                            flex items-center justify-center p-6">
+            <!-- Editorial Bio & Education/Certifications Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div class="apple-utility-card space-y-5">
+                    <h3 class="apple-tagline text-apple-ink">Background & Focus</h3>
+                    <p class="text-apple-ink">
+                        My journey in tech started with a fascination for how things work, which quickly evolved into building things that work intelligently.
+                    </p>
+                    <p class="text-apple-ink">
+                        With strong foundations in <strong class="font-semibold">Data Structures, Algorithms, and OOP</strong>, I love solving real-world problems with clean, scalable code. I've solved
+                        <a href="https://leetcode.com/u/Anik_Chiney/" target="_blank" class="apple-link">200+ algorithmic problems on LeetCode</a>
+                        with a focus on efficient problem solving.
+                    </p>
+                </div>
 
+                <div class="apple-utility-card">
+                    <h3 class="apple-tagline text-apple-ink mb-6">Education & Certifications</h3>
+
+                    <div class="pb-6 mb-6 border-b border-apple-hairline">
+                        <div class="font-semibold text-apple-ink">B.Tech in CSE (AI & ML)</div>
+                        <div class="apple-caption text-apple-muted80 mt-0.5">
+                            <a href="https://iem.edu.in/" target="_blank" class="apple-link">Institute of Engineering and Management, Kolkata</a>
+                        </div>
+                        <div class="apple-fine-print text-apple-muted48 mt-1">2024 – 2028 • CGPA: 9.37/10</div>
+                    </div>
+
+                    <div class="apple-caption-strong text-apple-ink mb-3">Certifications</div>
+                    <ul class="space-y-2.5 apple-caption mb-5">
+                        <li>
+                            <a href="https://www.credly.com/org/ibm/badge/fundamentals-of-ai-agents-using-rag-and-langchain" target="_blank" class="apple-link">Fundamentals of AI Agents Using RAG (IBM)</a>
+                        </li>
+                        <li>
+                            <a href="https://nptel.ac.in/" target="_blank" class="apple-link">Programming with Generative AI (NPTEL)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.deeplearning.ai/courses/generative-ai-for-everyone/" target="_blank" class="apple-link">Generative AI for Everyone (DeepLearning.AI)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.coursera.org/learn/uol-cyber-security-fundamentals" target="_blank" class="apple-link">Cyber Security Fundamentals (University of London)</a>
+                        </li>
+                        <li>
+                            <a href="https://nptel.ac.in/" target="_blank" class="apple-link">Soft Skill Development (NPTEL)</a>
+                        </li>
+                    </ul>
+
+                    <a href="https://drive.google.com/drive/folders/1B25NzjUtOmtdBTuMp7o0CpIM0c4uj-jK" target="_blank" class="apple-caption apple-link font-semibold">
+                        View Certificate Portfolio <i class="fas fa-chevron-right text-[10px] ml-0.5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02. EXPERIENCE (Dark Tile 1 #272729) -->
+    <section id="experience" class="bg-apple-tile1 text-white py-[80px] px-4">
+        <div class="max-w-[980px] mx-auto">
+            <div class="text-center mb-16">
+                <p class="apple-caption-strong text-apple-bodyMuted uppercase tracking-wider mb-2">02. Experience</p>
+                <h2 class="apple-display-lg text-white">Research & Engineering</h2>
+            </div>
+
+            <div class="divide-y divide-white/10">
+                <!-- Item 1 -->
+                <div class="py-10 first:pt-0 last:pb-0 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <div class="apple-caption text-apple-blueDark mb-1">May 2026 – August 2026</div>
+                        <h3 class="apple-tagline text-white">Summer Intern</h3>
+                        <p class="apple-caption text-apple-bodyMuted mt-1">
+                            <a href="https://iem.edu.in/" target="_blank" class="apple-link-dark">CEDS, IEM</a>
+                            <span class="mx-1.5 text-white/30">•</span>
+                            <a href="https://drive.google.com/file/d/1N0CDfG0fAxGNjAVG82-yw_739lneL-4A/view?usp=sharing" target="_blank" class="apple-link-dark">Certificate</a>
+                        </p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <ul class="space-y-3 text-apple-bodyMuted">
+                            <li>Developed <strong class="font-semibold text-white">EmotionFusion</strong>, an AI-powered Music Emotion Recognition (MER) framework for cross-cultural emotion analysis.</li>
+                            <li>Designed and evaluated <strong class="font-semibold text-white">CNN-BiLSTM-Attention</strong> and <strong class="font-semibold text-white">SVM</strong>-based pipelines on the DEAM and Indian Classical Music datasets, achieving up to <strong class="font-semibold text-white">77.06% accuracy</strong>.</li>
+                            <li>Implemented end-to-end audio preprocessing, feature extraction using <strong class="font-semibold text-white">MFCC, Chroma, and Spectral Features</strong>, model training, and evaluation using <strong class="font-semibold text-white">PyTorch, Scikit-learn, and Librosa</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <div class="apple-caption text-apple-blueDark mb-1">Jan 2026 – April 2026</div>
+                        <h3 class="apple-tagline text-white">Winter Intern</h3>
+                        <p class="apple-caption text-apple-bodyMuted mt-1">
+                            <a href="https://c2iotlab.iem.edu.in/" target="_blank" class="apple-link-dark">C2IoT Lab, IEM</a>
+                        </p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <ul class="space-y-3 text-apple-bodyMuted">
+                            <li>Developing <strong class="font-semibold text-white">Small Language Models (SLMs)</strong> for AI-driven mental health support on edge devices (Jetson Nano, ESP32).</li>
+                            <li>Built backend inference pipelines, reducing system latency by <strong class="font-semibold text-white">~30%</strong>.</li>
+                            <li>Optimizing deployment workflows for AI models in resource-constrained environments.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="py-10 last:pb-0 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <div class="apple-caption text-apple-blueDark mb-1">Mar 2025</div>
+                        <h3 class="apple-tagline text-white">Business Development Intern</h3>
+                        <p class="apple-caption text-apple-bodyMuted mt-1">
+                            <a href="https://younity.in/" target="_blank" class="apple-link-dark">Younity (Remote)</a>
+                            <span class="mx-1.5 text-white/30">•</span>
+                            <a href="https://drive.google.com/file/d/1x29WeJvsI6__uk2_lGw8u4NF40qIRjf0/view" target="_blank" class="apple-link-dark">Certificate</a>
+                        </p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <ul class="space-y-3 text-apple-bodyMuted">
+                            <li>Conducted market analysis across <strong class="font-semibold text-white">100+ potential clients</strong> to identify partnership opportunities.</li>
+                            <li>Executed CRM outreach campaigns contributing to a <strong class="font-semibold text-white">20% increase</strong> in client conversion.</li>
+                            <li>Analyzed outreach data to improve targeting strategies and campaign efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03. FEATURED PROJECTS (Alternating Edge-to-Edge Apple Product Tiles) -->
+    <div id="projects">
+        <!-- Project 1: EmotionFusion (Light Canvas #ffffff) -->
+        <section class="bg-apple-canvas text-apple-ink py-[80px] px-4">
+            <div class="max-w-[980px] mx-auto text-center">
+                <p class="apple-caption-strong text-apple-muted48 uppercase tracking-wider mb-2">03. Featured Projects</p>
+                <h2 class="apple-display-lg text-apple-ink mb-3">EmotionFusion</h2>
+                <p class="apple-lead text-apple-ink mb-4">Cross-cultural Music Emotion Recognition.</p>
+                <p class="max-w-[680px] mx-auto text-apple-muted80 mb-6">
+                    AI-powered Music Emotion Recognition (MER) framework for cross-cultural emotion analysis. Achieved 77.06% accuracy using CNN-BiLSTM-Attention on DEAM and Indian Classical datasets.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 mb-8">
+                    <span class="apple-chip">PyTorch</span>
+                    <span class="apple-chip">Librosa</span>
+                    <span class="apple-chip">CNN-BiLSTM</span>
+                    <span class="apple-chip">Audio ML</span>
+                </div>
+                <div class="flex justify-center gap-4 mb-12">
+                    <a href="https://github.com/AnikChiney" target="_blank" class="btn-apple-primary">
+                        View on GitHub
+                    </a>
+                </div>
+                <div class="max-w-[820px] mx-auto">
+                    <video
+                        src="EmotionFusion.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                        class="w-full aspect-video object-cover rounded-[18px] bg-apple-black apple-product-shadow">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 2: Speech Emotion Recognition (Dark Tile 1 #272729) -->
+        <section class="bg-apple-tile1 text-white py-[80px] px-4">
+            <div class="max-w-[980px] mx-auto text-center">
+                <h2 class="apple-display-lg text-white mb-3">Speech Emotion Recognition</h2>
+                <p class="apple-lead text-white mb-4">Multilingual vocal affect detection.</p>
+                <p class="max-w-[680px] mx-auto text-apple-bodyMuted mb-6">
+                    Deep learning system using LSTM and Bidirectional LSTM with MFCC features. Trained on RAVDESS and Hindi IESC datasets with wav2vec2 embeddings for multilingual emotion recognition.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 mb-8">
+                    <span class="px-4 py-1.5 rounded-full text-[14px] border border-white/20 text-white/90">Python</span>
+                    <span class="px-4 py-1.5 rounded-full text-[14px] border border-white/20 text-white/90">LSTM</span>
+                    <span class="px-4 py-1.5 rounded-full text-[14px] border border-white/20 text-white/90">Deep Learning</span>
+                    <span class="px-4 py-1.5 rounded-full text-[14px] border border-white/20 text-white/90">wav2vec2</span>
+                </div>
+                <div class="flex justify-center gap-4 mb-12">
+                    <a href="https://github.com/AnikChiney" target="_blank" class="btn-apple-primary">
+                        View on GitHub
+                    </a>
+                </div>
+                <div class="max-w-[820px] mx-auto">
+                    <video
+                        src="serdemovideo.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                        class="w-full aspect-video object-cover rounded-[18px] bg-apple-black apple-product-shadow">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 3: CarbonLens AI (Parchment Canvas #f5f5f7) -->
+        <section class="bg-apple-parchment text-apple-ink py-[80px] px-4">
+            <div class="max-w-[980px] mx-auto text-center">
+                <h2 class="apple-display-lg text-apple-ink mb-3">CarbonLens AI</h2>
+                <p class="apple-lead text-apple-ink mb-4">Intelligent carbon emission forecasting.</p>
+                <p class="max-w-[680px] mx-auto text-apple-muted80 mb-6">
+                    Intelligent carbon emission forecasting system using Python, Flask, and Chart.js. Features Facebook Prophet time-series forecasting, carbon pricing analysis, and personalized sustainability recommendations.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 mb-8">
+                    <span class="apple-chip">Python</span>
+                    <span class="apple-chip">Flask</span>
+                    <span class="apple-chip">Chart.js</span>
+                    <span class="apple-chip">Prophet</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <a href="https://github.com/AnikChiney/CarbonLensAI-newPersonal" target="_blank" class="btn-apple-primary">
+                        View on GitHub
+                    </a>
+                    <a href="YOUR_LIVE_DEMO_URL_HERE" target="_blank" class="btn-apple-secondary">
+                        Live Demo
+                    </a>
+                </div>
+                <div class="max-w-[820px] mx-auto">
+                    <video
+                        src="carbonlensaidemo.mp4"
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                        class="w-full aspect-video object-cover rounded-[18px] bg-apple-black apple-product-shadow">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects 4 & 5: MindHeaven & WonderLust (2-Column Store Utility Grid on Light Canvas #ffffff) -->
+        <section class="bg-apple-canvas text-apple-ink py-[80px] px-4">
+            <div class="max-w-[980px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- MindHeaven -->
+                    <div class="apple-utility-card flex flex-col justify-between">
+                        <div>
+                            <div class="mb-6">
+                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="MindHeaven" class="w-full h-56 object-cover rounded-[8px] apple-product-shadow">
+                            </div>
+                            <h3 class="apple-tagline text-apple-ink mb-2">MindHeaven</h3>
+                            <p class="apple-caption text-apple-muted80 mb-5">
+                                AI Mental Health Platform built with MERN stack. Features AI chatbot using OpenRouter APIs, JWT-based authentication, and secure RESTful APIs with scalable backend services.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="apple-chip">MERN</span>
+                                <span class="apple-chip">OpenRouter API</span>
+                                <span class="apple-chip">JWT Auth</span>
+                                <span class="apple-chip">REST API</span>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="https://github.com/AnikChiney/MindHeaven" target="_blank" class="apple-link font-normal">
+                                View on GitHub <i class="fas fa-chevron-right text-[11px] ml-0.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- WonderLust -->
+                    <div class="apple-utility-card flex flex-col justify-between">
+                        <div>
+                            <div class="mb-6">
+                                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="WonderLust" class="w-full h-56 object-cover rounded-[8px] apple-product-shadow">
+                            </div>
+                            <h3 class="apple-tagline text-apple-ink mb-2">WonderLust</h3>
+                            <p class="apple-caption text-apple-muted80 mb-5">
+                                Full Stack Property Rental Platform with booking management, authentication, CRUD operations, and optimized MongoDB queries for efficient data retrieval.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="apple-chip">MERN</span>
+                                <span class="apple-chip">Bootstrap</span>
+                                <span class="apple-chip">MongoDB</span>
+                                <span class="apple-chip">REST API</span>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="https://github.com/AnikChiney/Anikwonderlust" target="_blank" class="apple-link font-normal">
+                                View on GitHub <i class="fas fa-chevron-right text-[11px] ml-0.5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="https://github.com/AnikChiney" target="_blank" class="apple-link">
+                        View All Projects on GitHub <i class="fas fa-chevron-right text-[11px] ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 04. RESEARCH PUBLICATIONS (Dark Tile 2 #2a2a2c) -->
+    <section id="publications" class="bg-apple-tile2 text-white py-[80px] px-4">
+        <div class="max-w-[980px] mx-auto">
+            <div class="text-center mb-14">
+                <p class="apple-caption-strong text-apple-bodyMuted uppercase tracking-wider mb-2">04. Research Publications</p>
+                <h2 class="apple-display-lg text-white mb-4">Peer-Reviewed Research</h2>
+                <p class="apple-lead-airy text-apple-bodyMuted max-w-[680px] mx-auto">
+                    Exploring AI, deep learning, and cross-lingual speech emotion recognition through research.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
                     <img
                         src="paperimg.jpeg"
                         alt="Research paper thumbnail"
-                        class="absolute inset-0 w-full h-full object-cover"
+                        class="w-full h-72 object-cover rounded-[18px] bg-apple-black apple-product-shadow"
                         loading="lazy"
                     >
-
-                    <div class="absolute top-4 left-4">
-                        <span class="px-3 py-1 text-xs font-semibold
-                                     rounded-full bg-indigo-600/90
-                                     text-white">
-                            IEEE Publication
-                        </span>
-                    </div>
                 </div>
 
-                <!-- Paper Details -->
-                <div class="p-6 md:p-8 flex flex-col justify-center">
-
-                    <div class="flex items-center gap-2 mb-4
-                                text-indigo-400 text-sm">
-                        <i class="fas fa-file-alt"></i>
-                        <span>Research Paper</span>
+                <div>
+                    <div class="apple-caption-strong text-apple-blueDark mb-2">
+                        IEEE Publication • Research Paper
                     </div>
-
-                    <h3 class="text-xl md:text-2xl font-bold
-                               text-white mb-4 leading-snug">
-                        Cross-Lingual Speech Emotion Recognition
-                        with Wav2Vec2: Bengali-English Emotion Transfer
+                    <h3 class="apple-display-md text-white mb-4">
+                        Cross-Lingual Speech Emotion Recognition with Wav2Vec2: Bengali-English Emotion Transfer
                     </h3>
-
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                        Research on cross-lingual speech emotion
-                        recognition using Wav2Vec2, exploring emotion
-                        transfer between Bengali and English speech.
+                    <p class="text-apple-bodyMuted mb-6">
+                        Research on cross-lingual speech emotion recognition using Wav2Vec2, exploring emotion transfer between Bengali and English speech.
                     </p>
-
-                    <div class="flex flex-wrap gap-2 mb-7">
-                        <span class="px-3 py-1 text-xs rounded-full
-                                     bg-indigo-500/10 text-indigo-300">
-                            Speech Emotion Recognition
-                        </span>
-                        <span class="px-3 py-1 text-xs rounded-full
-                                     bg-purple-500/10 text-purple-300">
-                            Wav2Vec2
-                        </span>
-                        <span class="px-3 py-1 text-xs rounded-full
-                                     bg-pink-500/10 text-pink-300">
-                            Deep Learning
-                        </span>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3.5 py-1 rounded-full text-[14px] border border-white/20 text-white/90">Speech Emotion Recognition</span>
+                        <span class="px-3.5 py-1 rounded-full text-[14px] border border-white/20 text-white/90">Wav2Vec2</span>
+                        <span class="px-3.5 py-1 rounded-full text-[14px] border border-white/20 text-white/90">Deep Learning</span>
                     </div>
-
                     <a
                         href="https://ieeexplore.ieee.org/document/11723515"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center justify-center
-                               gap-2 px-5 py-3 rounded-lg
-                               bg-gradient-to-r from-indigo-600
-                               to-purple-600 text-white font-semibold
-                               hover:opacity-90 transition-all">
-
-                        <i class="fas fa-graduation-cap"></i>
+                        class="btn-apple-primary">
                         View Paper
-                        <i class="fas fa-arrow-up-right-from-square
-                                  text-xs"></i>
                     </a>
-
                 </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
-
-
-    <section id="achievements" class="py-24 bg-darker/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center"><span class="text-indigo-500">04.</span> Achievements</h2>
+    <!-- 04. ACHIEVEMENTS (Parchment Canvas #f5f5f7) -->
+    <section id="achievements" class="bg-apple-parchment text-apple-ink py-[80px] px-4">
+        <div class="max-w-[980px] mx-auto">
+            <div class="text-center mb-14">
+                <p class="apple-caption-strong text-apple-muted48 uppercase tracking-wider mb-2">04. Achievements</p>
+                <h2 class="apple-display-lg text-apple-ink">Recognition & Milestones</h2>
+            </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="achievement-card glass-card p-6 rounded-xl">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center text-indigo-400 flex-shrink-0">
-                            <i class="fas fa-file-alt text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white mb-2">Research Paper Presentation</h3>
-                            <p class="text-gray-400 text-sm">Presented paper on "Evaluating Monolingual and Multilingual Training in English-Hindi Speech Emotion Recognition"</p>
-                        </div>
-                    </div>
+                <div class="apple-utility-card">
+                    <div class="apple-caption-strong text-apple-blue mb-1">Academic Conference</div>
+                    <h3 class="apple-tagline text-apple-ink mb-2">Research Paper Presentation</h3>
+                    <p class="apple-caption text-apple-muted80">
+                        Presented paper on "Evaluating Monolingual and Multilingual Training in English-Hindi Speech Emotion Recognition"
+                    </p>
                 </div>
 
-                <div class="achievement-card glass-card p-6 rounded-xl">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center text-purple-400 flex-shrink-0">
-                            <i class="fas fa-award text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white mb-2">Top 10 Poster</h3>
-                            <p class="text-gray-400 text-sm">Insight 2.0 Research Poster Presentation, IEM</p>
-                        </div>
-                    </div>
+                <div class="apple-utility-card">
+                    <div class="apple-caption-strong text-apple-blue mb-1">Research Showcase</div>
+                    <h3 class="apple-tagline text-apple-ink mb-2">Top 10 Poster</h3>
+                    <p class="apple-caption text-apple-muted80">
+                        Insight 2.0 Research Poster Presentation, IEM
+                    </p>
                 </div>
 
-                <div class="achievement-card glass-card p-6 rounded-xl">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center text-pink-400 flex-shrink-0">
-                            <i class="fas fa-code text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white mb-2">GenSpark 2.0 Hackathon</h3>
-                            <p class="text-gray-400 text-sm">Winner - GenAI CoE IEM</p>
-                        </div>
-                    </div>
+                <div class="apple-utility-card">
+                    <div class="apple-caption-strong text-apple-blue mb-1">1st Place</div>
+                    <h3 class="apple-tagline text-apple-ink mb-2">GenSpark 2.0 Hackathon</h3>
+                    <p class="apple-caption text-apple-muted80">
+                        Winner – GenAI CoE IEM
+                    </p>
                 </div>
 
-                <div class="achievement-card glass-card p-6 rounded-xl">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center text-yellow-400 flex-shrink-0">
-                            <i class="fas fa-trophy text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white mb-2">2nd Position</h3>
-                            <p class="text-gray-400 text-sm">MATLAB Hackathon 2025, IEM CEDS</p>
-                        </div>
-                    </div>
+                <div class="apple-utility-card">
+                    <div class="apple-caption-strong text-apple-blue mb-1">Runner-Up</div>
+                    <h3 class="apple-tagline text-apple-ink mb-2">2nd Position</h3>
+                    <p class="apple-caption text-apple-muted80">
+                        MATLAB Hackathon 2025, IEM CEDS
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center"><span class="text-indigo-500">05.</span> Technical Arsenal</h2>
+    <!-- 05. TECHNICAL ARSENAL (Light Canvas #ffffff) -->
+    <section id="skills" class="bg-apple-canvas text-apple-ink py-[80px] px-4">
+        <div class="max-w-[980px] mx-auto">
+            <div class="text-center mb-14">
+                <p class="apple-caption-strong text-apple-muted48 uppercase tracking-wider mb-2">05. Technical Arsenal</p>
+                <h2 class="apple-display-lg text-apple-ink">Languages, Frameworks & Core CS</h2>
+            </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
-                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 text-blue-400">
-                        <i class="fas fa-code text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-3">Languages</h3>
+                <div class="apple-utility-card">
+                    <h3 class="apple-tagline text-apple-ink mb-4">Languages</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Java</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Python</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">C</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">JavaScript</span>
+                        <span class="apple-chip">Java</span>
+                        <span class="apple-chip">Python</span>
+                        <span class="apple-chip">C</span>
+                        <span class="apple-chip">JavaScript</span>
                     </div>
                 </div>
 
-                <div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
-                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 text-purple-400">
-                        <i class="fas fa-laptop-code text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-3">Frontend</h3>
+                <div class="apple-utility-card">
+                    <h3 class="apple-tagline text-apple-ink mb-4">Frontend</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">React.js</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">HTML5</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">CSS3</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Bootstrap</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Material UI</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Chart.js</span>
+                        <span class="apple-chip">React.js</span>
+                        <span class="apple-chip">HTML5</span>
+                        <span class="apple-chip">CSS3</span>
+                        <span class="apple-chip">Bootstrap</span>
+                        <span class="apple-chip">Material UI</span>
+                        <span class="apple-chip">Chart.js</span>
                     </div>
                 </div>
 
-                <div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
-                    <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 text-green-400">
-                        <i class="fas fa-server text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-3">Backend</h3>
+                <div class="apple-utility-card">
+                    <h3 class="apple-tagline text-apple-ink mb-4">Backend</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Node.js</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Express.js</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Flask</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">REST API</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">MVC Architecture</span>
+                        <span class="apple-chip">Node.js</span>
+                        <span class="apple-chip">Express.js</span>
+                        <span class="apple-chip">Flask</span>
+                        <span class="apple-chip">REST API</span>
+                        <span class="apple-chip">MVC Architecture</span>
                     </div>
                 </div>
 
-                <div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
-                    <div class="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4 text-yellow-400">
-                        <i class="fas fa-database text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-3">Databases</h3>
+                <div class="apple-utility-card">
+                    <h3 class="apple-tagline text-apple-ink mb-4">Databases</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">SQL</span>
+                        <span class="apple-chip">SQL</span>
                     </div>
                 </div>
 
-                <div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
-                    <div class="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center mb-4 text-pink-400">
-                        <i class="fas fa-brain text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-3">AI & ML</h3>
+                <div class="apple-utility-card">
+                    <h3 class="apple-tagline text-apple-ink mb-4">AI & ML</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Machine Learning</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Deep Learning</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Neural Networks</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">LLMs</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">LangChain</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">RAG</span>
+                        <span class="apple-chip">Machine Learning</span>
+                        <span class="apple-chip">Deep Learning</span>
+                        <span class="apple-chip">Neural Networks</span>
+                        <span class="apple-chip">LLMs</span>
+                        <span class="apple-chip">LangChain</span>
+                        <span class="apple-chip">RAG</span>
                     </div>
                 </div>
 
-                <div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
-                    <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4 text-orange-400">
-                        <i class="fas fa-tools text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-3">Tools & Core CS</h3>
+                <div class="apple-utility-card">
+                    <h3 class="apple-tagline text-apple-ink mb-4">Tools & Core CS</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Operating Systems</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Database Management Systems</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Data Structures</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Algorithms</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">OOP</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Git</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">GitHub</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Postman</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">JWT Auth</span>
-                        <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300">Streamlit</span>
-                        
+                        <span class="apple-chip">Operating Systems</span>
+                        <span class="apple-chip">Database Management Systems</span>
+                        <span class="apple-chip">Data Structures</span>
+                        <span class="apple-chip">Algorithms</span>
+                        <span class="apple-chip">OOP</span>
+                        <span class="apple-chip">Git</span>
+                        <span class="apple-chip">GitHub</span>
+                        <span class="apple-chip">Postman</span>
+                        <span class="apple-chip">JWT Auth</span>
+                        <span class="apple-chip">Streamlit</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="glass p-8 md:p-12 rounded-2xl border border-white/10 shadow-2xl">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Work Together</h2>
-                    <p class="text-gray-400">Have a project in mind? I'm currently open to new opportunities.</p>
-                </div>
+    <!-- CONTACT (Dark Tile 3 #252527) -->
+    <section id="contact" class="bg-apple-tile3 text-white py-[80px] px-4">
+        <div class="max-w-[720px] mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="apple-display-lg text-white mb-3">Let's Work Together</h2>
+                <p class="apple-lead text-apple-bodyMuted">
+                    Have a project in mind? I'm currently open to new opportunities.
+                </p>
+            </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                    <a href="mailto:anikchiney130@gmail.com" class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-all group">
-                        <i class="fas fa-envelope text-2xl text-indigo-400 mb-2 group-hover:scale-110 transition-transform"></i>
-                        <p class="text-sm text-gray-300">Email</p>
-                        <p class="text-xs text-gray-500 mt-1">anikchiney130@gmail.com</p>
-                    </a>
-                    <a href="tel:+919382844421" class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-all group">
-                        <i class="fas fa-phone text-2xl text-indigo-400 mb-2 group-hover:scale-110 transition-transform"></i>
-                        <p class="text-sm text-gray-300">Phone</p>
-                        <p class="text-xs text-gray-500 mt-1">+91 9382844421</p>
-                    </a>
-                    <a href="https://linkedin.com/in/anik-chiney-a11842325" target="_blank" class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-all group">
-                        <i class="fab fa-linkedin text-2xl text-indigo-400 mb-2 group-hover:scale-110 transition-transform"></i>
-                        <p class="text-sm text-gray-300">LinkedIn</p>
-                        <p class="text-xs text-gray-500 mt-1">Connect</p>
-                    </a>
-                    <a href="https://github.com/AnikChiney" target="_blank" class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-all group">
-                        <i class="fab fa-github text-2xl text-indigo-400 mb-2 group-hover:scale-110 transition-transform"></i>
-                        <p class="text-sm text-gray-300">GitHub</p>
-                        <p class="text-xs text-gray-500 mt-1">View Projects</p>
-                    </a>
-                </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12 text-center">
+                <a href="mailto:anikchiney130@gmail.com" class="p-4 rounded-[18px] border border-white/15 hover:border-apple-blueDark transition-colors">
+                    <div class="apple-caption-strong text-white mb-1">Email</div>
+                    <div class="apple-fine-print text-apple-blueDark truncate">anikchiney130@gmail.com</div>
+                </a>
+                <a href="tel:+919382844421" class="p-4 rounded-[18px] border border-white/15 hover:border-apple-blueDark transition-colors">
+                    <div class="apple-caption-strong text-white mb-1">Phone</div>
+                    <div class="apple-fine-print text-apple-blueDark">+91 9382844421</div>
+                </a>
+                <a href="https://linkedin.com/in/anik-chiney-a11842325" target="_blank" class="p-4 rounded-[18px] border border-white/15 hover:border-apple-blueDark transition-colors">
+                    <div class="apple-caption-strong text-white mb-1">LinkedIn</div>
+                    <div class="apple-fine-print text-apple-blueDark">Connect</div>
+                </a>
+                <a href="https://github.com/AnikChiney" target="_blank" class="p-4 rounded-[18px] border border-white/15 hover:border-apple-blueDark transition-colors">
+                    <div class="apple-caption-strong text-white mb-1">GitHub</div>
+                    <div class="apple-fine-print text-apple-blueDark">View Projects</div>
+                </a>
+            </div>
 
-                <form id="contactForm" class="space-y-6" onsubmit="handleSubmit(event)">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Name</label>
-                            <input type="text" required class="w-full bg-dark/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" placeholder="John Doe">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Email</label>
-                            <input type="email" required class="w-full bg-dark/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" placeholder="john@example.com">
-                        </div>
+            <form id="contactForm" class="space-y-5" onsubmit="handleSubmit(event)">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block apple-caption text-apple-bodyMuted mb-2">Name</label>
+                        <input type="text" required class="w-full h-[44px] bg-white text-apple-ink rounded-full px-5 text-[17px] border border-black/10 focus:outline-none focus:ring-2 focus:ring-apple-blueFocus" placeholder="John Doe">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                        <textarea rows="4" required class="w-full bg-dark/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors" placeholder="Tell me about your project..."></textarea>
+                        <label class="block apple-caption text-apple-bodyMuted mb-2">Email</label>
+                        <input type="email" required class="w-full h-[44px] bg-white text-apple-ink rounded-full px-5 text-[17px] border border-black/10 focus:outline-none focus:ring-2 focus:ring-apple-blueFocus" placeholder="john@example.com">
                     </div>
-                    <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold py-4 rounded-lg hover:shadow-lg hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-1 flex justify-center items-center gap-2">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-
-                <div id="successMessage" class="hidden mt-4 p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-400 text-center">
-                    <i class="fas fa-check-circle mr-2"></i> Message sent successfully! I'll get back to you soon.
                 </div>
+                <div>
+                    <label class="block apple-caption text-apple-bodyMuted mb-2">Message</label>
+                    <textarea rows="4" required class="w-full bg-white text-apple-ink rounded-[18px] px-5 py-3.5 text-[17px] border border-black/10 focus:outline-none focus:ring-2 focus:ring-apple-blueFocus" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <div class="text-center pt-2">
+                    <button type="submit" class="btn-apple-primary px-8">
+                        <span>Send Message</span>
+                    </button>
+                </div>
+            </form>
+
+            <div id="successMessage" class="hidden mt-6 p-4 rounded-[18px] border border-white/20 text-center apple-caption text-white">
+                Message sent successfully! I'll get back to you soon.
             </div>
         </div>
     </section>
 
-    <footer class="py-8 border-t border-white/5 bg-darker">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <span class="text-xl font-bold font-mono text-white">&lt;<span class="text-indigo-400">AC</span>/&gt;</span>
-                <span class="text-gray-500 text-sm ml-2">© 2026 Anik Chiney. All rights reserved.</span>
+    <!-- FOOTER (Parchment Canvas #f5f5f7, 64px vertical padding) -->
+    <footer class="bg-apple-parchment text-apple-muted80 py-[64px] px-4 border-t border-apple-hairline">
+        <div class="max-w-[980px] mx-auto">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 pb-8 border-b border-apple-hairline">
+                <div>
+                    <h4 class="apple-caption-strong text-apple-ink mb-2">Explore</h4>
+                    <ul class="text-[17px] leading-[2.41] text-apple-muted80">
+                        <li><a href="#about" target="_self" class="hover:underline">About</a></li>
+                        <li><a href="#experience" target="_self" class="hover:underline">Experience</a></li>
+                        <li><a href="#projects" target="_self" class="hover:underline">Projects</a></li>
+                        <li><a href="#publications" target="_self" class="hover:underline">Publications</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="apple-caption-strong text-apple-ink mb-2">Credentials</h4>
+                    <ul class="text-[17px] leading-[2.41] text-apple-muted80">
+                        <li><a href="#achievements" target="_self" class="hover:underline">Achievements</a></li>
+                        <li><a href="#skills" target="_self" class="hover:underline">Technical Skills</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1B25NzjUtOmtdBTuMp7o0CpIM0c4uj-jK" target="_blank" class="hover:underline">Certifications</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="apple-caption-strong text-apple-ink mb-2">Profiles</h4>
+                    <ul class="text-[17px] leading-[2.41] text-apple-muted80">
+                        <li><a href="https://github.com/AnikChiney" target="_blank" class="hover:underline">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/anik-chiney-a11842325" target="_blank" class="hover:underline">LinkedIn</a></li>
+                        <li><a href="https://leetcode.com/u/Anik_Chiney/" target="_blank" class="hover:underline">LeetCode</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=EJZFb28AAAAJ" target="_blank" rel="noopener noreferrer" class="hover:underline">Google Scholar</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="apple-caption-strong text-apple-ink mb-2">Direct Contact</h4>
+                    <ul class="text-[17px] leading-[2.41] text-apple-muted80">
+                        <li><a href="mailto:anikchiney130@gmail.com" class="hover:underline">Email</a></li>
+                        <li><a href="tel:+919382844421" class="hover:underline">+91 9382844421</a></li>
+                        <li><a href="#contact" target="_self" class="hover:underline">Send a Message</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="flex gap-6">
-                <a href="https://linkedin.com/in/anik-chiney-a11842325" target="_blank" class="text-gray-400 hover:text-white transition-colors" title="LinkedIn">
-                    <i class="fab fa-linkedin text-xl"></i>
-                </a>
-                <a href="https://github.com/AnikChiney" target="_blank" class="text-gray-400 hover:text-white transition-colors" title="GitHub">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-                <a href="https://leetcode.com/u/Anik_Chiney/" target="_blank" class="text-gray-400 hover:text-white transition-colors" title="LeetCode">
-                    <i class="fas fa-code text-xl"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?user=EJZFb28AAAAJ"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="text-gray-400 hover:text-white transition-colors"
-                   title="Google Scholar">
-                    <i class="fas fa-graduation-cap text-xl"></i>
-                </a>
-                <a href="mailto:anikchiney130@gmail.com" class="text-gray-400 hover:text-white transition-colors" title="Email">
-                    <i class="fas fa-envelope text-xl"></i>
-                </a>
-                <a href="tel:+919382844421" class="text-gray-400 hover:text-white transition-colors" title="Phone: +91 9382844421">
-                    <i class="fas fa-phone text-xl"></i>
-                </a>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 apple-fine-print text-apple-muted48">
+                <div>Copyright © 2026 Anik Chiney. All rights reserved.</div>
+                <div>Kolkata, West Bengal, India</div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Remove Loader
-        window.addEventListener('load', () => {
-            const loader = document.getElementById('loader');
-            setTimeout(() => {
-                loader.style.opacity = '0';
-                setTimeout(() => {
-                    loader.style.display = 'none';
-                }, 500);
-            }, 1000);
-        });
-
         // Typewriter Effect
         const words = ["AI Applications.", "Scalable Web Apps.", "MERN Stack Solutions.", "LLM Integrations."];
         let i = 0;
-        let timer;
+        let isDeleting = false;
 
         function typeWriter() {
             const element = document.getElementById('typewriter');
+            if (!element) return;
             const word = words[i];
-            let currentText = element.innerText;
+            const currentText = element.innerText;
 
-            if (!this.isDeleting && currentText !== word) {
+            if (!isDeleting && currentText !== word) {
                 element.innerText = word.substring(0, currentText.length + 1);
-                timer = setTimeout(typeWriter, 100);
-            } else if (!this.isDeleting && currentText === word) {
-                this.isDeleting = true;
-                timer = setTimeout(typeWriter, 2000);
-            } else if (this.isDeleting && currentText !== "") {
+                setTimeout(typeWriter, 90);
+            } else if (!isDeleting && currentText === word) {
+                isDeleting = true;
+                setTimeout(typeWriter, 2000);
+            } else if (isDeleting && currentText !== "") {
                 element.innerText = word.substring(0, currentText.length - 1);
-                timer = setTimeout(typeWriter, 50);
+                setTimeout(typeWriter, 45);
             } else {
-                this.isDeleting = false;
+                isDeleting = false;
                 i = (i + 1) % words.length;
-                timer = setTimeout(typeWriter, 500);
+                setTimeout(typeWriter, 400);
             }
         }
 
-        // Start Typewriter
-        setTimeout(typeWriter, 1000);
-
-        // Custom Cursor Logic
-        const cursorDot = document.querySelector('.cursor-dot');
-        const cursorOutline = document.querySelector('.cursor-outline');
-
-        window.addEventListener('mousemove', (e) => {
-            const posX = e.clientX;
-            const posY = e.clientY;
-
-            cursorDot.style.left = `${posX}px`;
-            cursorDot.style.top = `${posY}px`;
-
-            cursorOutline.animate({
-                left: `${posX}px`,
-                top: `${posY}px`
-            }, { duration: 500, fill: "forwards" });
-        });
-
-        // Hover effect for cursor
-        document.querySelectorAll('a, button, .project-card').forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursorOutline.style.width = '60px';
-                cursorOutline.style.height = '60px';
-                cursorOutline.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
-            });
-            el.addEventListener('mouseleave', () => {
-                cursorOutline.style.width = '40px';
-                cursorOutline.style.height = '40px';
-                cursorOutline.style.backgroundColor = 'transparent';
-            });
-        });
-
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                nav.classList.add('glass', 'shadow-lg');
-            } else {
-                nav.classList.remove('glass', 'shadow-lg');
-            }
-        });
-
-        // GSAP Animations
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Fade Up Elements
-        gsap.utils.toArray('.gsap-fade-right').forEach(element => {
-            gsap.from(element, {
-                scrollTrigger: {
-                    trigger: element,
-                    start: "top 85%",
-                    toggleActions: "play none none reverse"
-                },
-                x: -50,
-                opacity: 0,
-                duration: 1,
-                ease: "power3.out"
-            });
-        });
-
-        gsap.utils.toArray('.gsap-fade-left').forEach(element => {
-            gsap.from(element, {
-                scrollTrigger: {
-                    trigger: element,
-                    start: "top 85%",
-                    toggleActions: "play none none reverse"
-                },
-                x: 50,
-                opacity: 0,
-                duration: 1,
-                ease: "power3.out"
-            });
-        });
-
-        gsap.utils.toArray('.project-card').forEach((card, i) => {
-            gsap.from(card, {
-                scrollTrigger: {
-                    trigger: card,
-                    start: "top 90%",
-                },
-                y: 50,
-                opacity: 0,
-                duration: 0.8,
-                delay: i * 0.1,
-                ease: "power3.out"
-            });
-        });
-
-        // Achievement cards animation
-        gsap.utils.toArray('.achievement-card').forEach((card, i) => {
-            gsap.from(card, {
-                scrollTrigger: {
-                    trigger: card,
-                    start: "top 90%",
-                },
-                x: i % 2 === 0 ? -50 : 50,
-                opacity: 0,
-                duration: 0.8,
-                delay: i * 0.1,
-                ease: "power3.out"
-            });
-        });
+        setTimeout(typeWriter, 1200);
 
         // Contact Form Handling
         function handleSubmit(e) {
@@ -1133,7 +1046,7 @@
             const btn = e.target.querySelector('button');
             const originalText = btn.innerHTML;
 
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.innerHTML = '<span>Sending...</span>';
             btn.disabled = true;
 
             setTimeout(() => {
@@ -1145,64 +1058,8 @@
                 setTimeout(() => {
                     document.getElementById('successMessage').classList.add('hidden');
                 }, 5000);
-            }, 1500);
+            }, 1200);
         }
-
-        // Particle Background Logic
-        const canvas = document.getElementById('particleCanvas');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2;
-                this.speedX = Math.random() * 0.5 - 0.25;
-                this.speedY = Math.random() * 0.5 - 0.25;
-                this.opacity = Math.random() * 0.5;
-            }
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-                if (this.x > canvas.width) this.x = 0;
-                if (this.x < 0) this.x = canvas.width;
-                if (this.y > canvas.height) this.y = 0;
-                if (this.y < 0) this.y = canvas.height;
-            }
-            draw() {
-                ctx.fillStyle = `rgba(99, 102, 241, ${this.opacity})`;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function initParticles() {
-            for (let i = 0; i < 50; i++) {
-                particles.push(new Particle());
-            }
-        }
-
-        function animateParticles() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (let i = 0; i < particles.length; i++) {
-                particles[i].update();
-                particles[i].draw();
-            }
-            requestAnimationFrame(animateParticles);
-        }
-
-        initParticles();
-        animateParticles();
-
     </script>
 </body>
 </html>
